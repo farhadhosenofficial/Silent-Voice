@@ -1,0 +1,359 @@
+<html lang="bn"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>সাইলেন্ট ভয়েস - ইউনিভার্সাল লিপ ও বাংলা কিবোর্ড</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js" crossorigin="anonymous"></script>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.left-2{left:0.5rem}.right-2{right:0.5rem}.top-2{top:0.5rem}.my-auto{margin-top:auto;margin-bottom:auto}.mt-1{margin-top:0.25rem}.flex{display:flex}.grid{display:grid}.aspect-\[16\/9\]{aspect-ratio:16/9}.h-2{height:0.5rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.min-h-\[2\.5rem\]{min-height:2.5rem}.w-2{width:0.5rem}.w-full{width:100%}.max-w-md{max-width:28rem}.scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-scale-x-100{--tw-scale-x:-1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.overflow-hidden{overflow:hidden}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.break-words{overflow-wrap:break-word}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-cyan-500\/30{border-color:rgb(6 182 212 / 0.3)}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-yellow-500\/30{border-color:rgb(234 179 8 / 0.3)}.border-emerald-500{--tw-border-opacity:1;border-color:rgb(16 185 129 / var(--tw-border-opacity, 1))}.border-slate-500{--tw-border-opacity:1;border-color:rgb(100 116 139 / var(--tw-border-opacity, 1))}.border-slate-600{--tw-border-opacity:1;border-color:rgb(71 85 105 / var(--tw-border-opacity, 1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-black\/70{background-color:rgb(0 0 0 / 0.7)}.bg-cyan-600{--tw-bg-opacity:1;background-color:rgb(8 145 178 / var(--tw-bg-opacity, 1))}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-slate-700{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-800\/80{background-color:rgb(30 41 59 / 0.8)}.bg-slate-900\/90{background-color:rgb(15 23 42 / 0.9)}.bg-yellow-400{--tw-bg-opacity:1;background-color:rgb(250 204 21 / var(--tw-bg-opacity, 1))}.bg-emerald-700\/80{background-color:rgb(4 120 87 / 0.8)}.bg-red-400{--tw-bg-opacity:1;background-color:rgb(248 113 113 / var(--tw-bg-opacity, 1))}.bg-amber-500\/20{background-color:rgb(245 158 11 / 0.2)}.object-cover{object-fit:cover}.p-3{padding:0.75rem}.p-2\.5{padding:0.625rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.text-center{text-align:center}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-cyan-300{--tw-text-opacity:1;color:rgb(103 232 249 / var(--tw-text-opacity, 1))}.text-cyan-400{--tw-text-opacity:1;color:rgb(34 211 238 / var(--tw-text-opacity, 1))}.text-red-300{--tw-text-opacity:1;color:rgb(252 165 165 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-yellow-400{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity, 1))}.text-cyan-200{--tw-text-opacity:1;color:rgb(165 243 252 / var(--tw-text-opacity, 1))}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.ring-2{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.ring-amber-400{--tw-ring-opacity:1;--tw-ring-color:rgb(251 191 36 / var(--tw-ring-opacity, 1))}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:bg-cyan-500:hover{--tw-bg-opacity:1;background-color:rgb(6 182 212 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-500:hover{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-600:hover{--tw-bg-opacity:1;background-color:rgb(71 85 105 / var(--tw-bg-opacity, 1))}.hover\:bg-cyan-700:hover{--tw-bg-opacity:1;background-color:rgb(14 116 144 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}</style></head>
+<body class="bg-slate-900 text-white min-h-screen flex flex-col items-center justify-between p-3">
+
+    <!-- Header -->
+    <header class="w-full max-w-md text-center py-1 flex flex-col items-center gap-1">
+        <h1 class="text-xl font-bold text-cyan-400">সাইলেন্ট ভয়েস (All-in-One)</h1>
+        <p class="text-[11px] text-slate-400">ঠোঁট নাড়িয়ে যেকোনো বাংলা বাক্য লিখুন ও বলুন</p>
+        <!-- Download Button for Mobile/PC Users -->
+        <button onclick="downloadThisApp()" class="mt-1 bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow transition flex items-center gap-1">
+            📥 এই অ্যাপটি ডাউনলোড করুন
+        </button>
+    </header>
+
+    <!-- Main Container -->
+    <main class="w-full max-w-md flex flex-col items-center gap-2.5 my-auto">
+        <!-- Camera Feed Box -->
+        <div class="relative w-full aspect-[16/9] bg-slate-800 rounded-2xl overflow-hidden shadow-xl border-2 border-slate-700 flex items-center justify-center">
+            <video id="webcam" class="w-full h-full object-cover transform -scale-x-100" autoplay="" playsinline="" muted=""></video>
+            <canvas id="lip-canvas" class="w-full h-full object-cover transform -scale-x-100 absolute inset-0 pointer-events-none"></canvas>
+            
+            <!-- Status Badge -->
+            <div id="status" class="absolute top-2 left-2 bg-black/70 backdrop-blur-md px-2.5 py-1 rounded-full text-[11px] text-yellow-400 border border-yellow-500/30 flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-red-400"></span> ক্যামেরা ব্লক করা আছে</div>
+
+            <!-- Lip Trigger Badge -->
+            <div id="lip-state" class="absolute top-2 right-2 bg-black/70 backdrop-blur-md px-2.5 py-1 rounded-full text-[11px] text-cyan-300 border border-cyan-500/30">
+                ঠোঁট: স্থির 👄
+            </div>
+        </div>
+
+        <!-- Sentence Builder Display -->
+        <div class="w-full bg-slate-800 p-3 rounded-xl border border-slate-700 flex flex-col gap-2">
+            <div class="flex justify-between items-center">
+                <span class="text-[11px] text-slate-400">তৈরিকৃত বাক্য (যেকোনো কথা):</span>
+                <div class="flex gap-1.5">
+                    <button onclick="backspaceText()" class="bg-slate-700 hover:bg-slate-600 px-2 py-0.5 rounded text-[11px] text-amber-300">⌫ মুছুন</button>
+                    <button onclick="clearText()" class="bg-slate-700 hover:bg-slate-600 px-2 py-0.5 rounded text-[11px] text-red-300">সব মুছুন</button>
+                </div>
+            </div>
+            <div id="sentence-box" class="w-full bg-slate-900/90 p-2.5 rounded-lg border border-slate-700 text-base font-semibold text-cyan-300 min-h-[2.5rem] break-words">
+                
+            </div>
+            <button onclick="speakCurrentSentence()" class="w-full bg-emerald-600 hover:bg-emerald-500 active:scale-95 py-2 rounded-lg font-bold text-sm text-white shadow transition flex items-center justify-center gap-2">
+                🔊 পুরো বাক্যটি বলুন
+            </button>
+        </div>
+
+        <!-- Smart Word Suggestions -->
+        <div class="w-full flex flex-col gap-1">
+            <span class="text-[11px] text-slate-400 px-1">দ্রুত শব্দ সাজেশন (ঠোঁট নাড়িয়ে বা ট্যাপ করে নিন):</span>
+            <div id="suggestion-bar" class="grid grid-cols-4 gap-1.5"><button class="scan-item bg-slate-800 hover:bg-cyan-700 border border-slate-600 py-1.5 px-2 rounded-lg text-xs font-medium text-cyan-200 truncate transition">আমি</button><button class="scan-item bg-slate-800 hover:bg-cyan-700 border border-slate-600 py-1.5 px-2 rounded-lg text-xs font-medium text-cyan-200 truncate transition ring-2 ring-amber-400 scale-105 bg-amber-500/20">পানি</button><button class="scan-item bg-slate-800 hover:bg-cyan-700 border border-slate-600 py-1.5 px-2 rounded-lg text-xs font-medium text-cyan-200 truncate transition">সাহায্য</button><button class="scan-item bg-slate-800 hover:bg-cyan-700 border border-slate-600 py-1.5 px-2 rounded-lg text-xs font-medium text-cyan-200 truncate transition">ভালো</button></div>
+        </div>
+
+        <!-- Auto-Scanning Bengali Letter Keyboard -->
+        <div class="w-full bg-slate-800/80 p-2.5 rounded-xl border border-slate-700 flex flex-col gap-2">
+            <div class="flex justify-between items-center">
+                <span class="text-[11px] text-cyan-400 font-medium">স্মার্ট বাংলা কিবোর্ড (ঠোঁট নাড়লে হাইলাইট করা অক্ষর যোগ হবে)</span>
+                <button id="scan-toggle" onclick="toggleAutoScan()" class="bg-cyan-600 px-2.5 py-0.5 rounded text-[11px] font-bold">
+                    স্ক্যান: চালু
+                </button>
+            </div>
+
+            <!-- Group Tabs (Row Selector) -->
+            <div id="row-tabs" class="grid grid-cols-5 gap-1 text-[11px]">
+                <button onclick="selectGroup(0)" class="group-tab bg-cyan-600 py-1 rounded font-bold">স্বর/কার</button>
+                <button onclick="selectGroup(1)" class="group-tab bg-slate-700 py-1 rounded">ক - ঞ</button>
+                <button onclick="selectGroup(2)" class="group-tab bg-slate-700 py-1 rounded">ট - ন</button>
+                <button onclick="selectGroup(3)" class="group-tab bg-slate-700 py-1 rounded">প - ম</button>
+                <button onclick="selectGroup(4)" class="group-tab bg-slate-700 py-1 rounded">য - ঁ / স্পেস</button>
+            </div>
+
+            <!-- Keys Grid -->
+            <div id="keys-grid" class="grid grid-cols-5 gap-1.5"><button class="scan-item py-2 rounded-lg font-bold text-sm border transition bg-slate-800 border-slate-600 text-white hover:bg-slate-700">অ</button><button class="scan-item py-2 rounded-lg font-bold text-sm border transition bg-slate-800 border-slate-600 text-white hover:bg-slate-700">আ</button><button class="scan-item py-2 rounded-lg font-bold text-sm border transition bg-slate-800 border-slate-600 text-white hover:bg-slate-700">ই</button><button class="scan-item py-2 rounded-lg font-bold text-sm border transition bg-slate-800 border-slate-600 text-white hover:bg-slate-700">উ</button><button class="scan-item py-2 rounded-lg font-bold text-sm border transition bg-slate-800 border-slate-600 text-white hover:bg-slate-700">এ</button><button class="scan-item py-2 rounded-lg font-bold text-sm border transition bg-slate-800 border-slate-600 text-white hover:bg-slate-700">ও</button><button class="scan-item py-2 rounded-lg font-bold text-sm border transition bg-slate-800 border-slate-600 text-white hover:bg-slate-700">া</button><button class="scan-item py-2 rounded-lg font-bold text-sm border transition bg-slate-800 border-slate-600 text-white hover:bg-slate-700">ি</button><button class="scan-item py-2 rounded-lg font-bold text-sm border transition bg-slate-800 border-slate-600 text-white hover:bg-slate-700">ী</button><button class="scan-item py-2 rounded-lg font-bold text-sm border transition bg-slate-800 border-slate-600 text-white hover:bg-slate-700">ু</button><button class="scan-item py-2 rounded-lg font-bold text-sm border transition bg-slate-800 border-slate-600 text-white hover:bg-slate-700">ে</button><button class="scan-item py-2 rounded-lg font-bold text-sm border transition bg-slate-800 border-slate-600 text-white hover:bg-slate-700">ো</button><button class="scan-item py-2 rounded-lg font-bold text-sm border transition bg-slate-800 border-slate-600 text-white hover:bg-slate-700">্</button><button class="scan-item py-2 rounded-lg font-bold text-sm border transition bg-slate-700 border-slate-500 text-amber-300 text-xs">স্পেস</button><button class="scan-item py-2 rounded-lg font-bold text-sm border transition bg-emerald-700/80 border-emerald-500 text-white text-xs">বলুন</button></div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full max-w-md text-center py-1 text-[10px] text-slate-500">
+        ব্যবহারবিধি: হলুদ বর্ডার যে অক্ষর বা শব্দের ওপর থাকবে, তখন একবার ঠোঁট নাড়লেই সেটি বাক্যে যুক্ত হবে।
+    </footer>
+
+    <script>
+        function downloadThisApp() {
+            const htmlContent = document.documentElement.outerHTML;
+            const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'silent_voice_app.html';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        const videoElement = document.getElementById('webcam');
+        const canvasElement = document.getElementById('lip-canvas');
+        const canvasCtx = canvasElement.getContext('2d');
+        const statusElement = document.getElementById('status');
+        const lipStateElement = document.getElementById('lip-state');
+        const sentenceBox = document.getElementById('sentence-box');
+        const keysGrid = document.getElementById('keys-grid');
+        const suggestionBar = document.getElementById('suggestion-bar');
+        const scanToggleBtn = document.getElementById('scan-toggle');
+
+        let currentSentence = "";
+        let isAutoScanning = true;
+        let currentGroupIndex = 0;
+        let scanPointer = 0;
+        let scannableItems = [];
+
+        const charGroups = [
+            ['অ', 'আ', 'ই', 'উ', 'এ', 'ও', 'া', 'ি', 'ী', 'ু', 'ে', 'ো', '্', 'স্পেস', 'বলুন'],
+            ['ক', 'খ', 'গ', 'ঘ', 'ঙ', 'চ', 'ছ', 'জ', 'ঝ', 'ঞ', 'স্পেস', 'মুছুন', 'বলুন', 'পরের গ্রুপ', 'সব মুছুন'],
+            ['ট', 'ঠ', 'ড', 'ঢ', 'ণ', 'ত', 'থ', 'দ', 'ধ', 'ন', 'স্পেস', 'মুছুন', 'বলুন', 'পরের গ্রুপ', 'সব মুছুন'],
+            ['প', 'ফ', 'ব', 'ভ', 'ম', 'য', 'র', 'ল', 'শ', 'ষ', 'স্পেস', 'মুছুন', 'বলুন', 'পরের গ্রুপ', 'সব মুছুন'],
+            ['স', 'হ', 'ড়', 'ঢ়', 'য়', 'ৎ', 'ং', 'ঃ', 'ঁ', '?', 'স্পেস', 'মুছুন', 'বলুন', 'পরের গ্রুপ', 'সব মুছুন']
+        ];
+
+        const commonWords = [
+            'আমি', 'আমার', 'আমাকে', 'তুমি', 'তোমার', 'আপনি', 'ভালো', 'খারাপ', 'আছি', 'নেই',
+            'পানি', 'খাবার', 'ওষুধ', 'ডাক্তার', 'সাহায্য', 'প্রয়োজন', 'লাগবে', 'খাবো', 'যাবো', 'ঘুমাবো',
+            'ব্যথা', 'করছে', 'মাথা', 'বুক', 'পেট', 'ঠান্ডা', 'গরম', 'বাড়ি', 'ফোন', 'দাও',
+            'হ্যাঁ', 'না', 'ধন্যবাদ', 'কেমন', 'আছেন', 'কী', 'কেন', 'কখন', 'কোথায়', 'এখন'
+        ];
+
+        function updateSuggestions() {
+            const words = currentSentence.trim().split(/\s+/);
+            const lastWord = words[words.length - 1] || "";
+            
+            let matches = [];
+            if (lastWord.length > 0 && !currentSentence.endsWith(" ")) {
+                matches = commonWords.filter(w => w.startsWith(lastWord) && w !== lastWord).slice(0, 4);
+            }
+            if (matches.length < 4) {
+                const defaults = ['আমি', 'পানি', 'সাহায্য', 'ভালো'];
+                for (let d of defaults) {
+                    if (!matches.includes(d) && matches.length < 4) matches.push(d);
+                }
+            }
+
+            suggestionBar.innerHTML = "";
+            matches.forEach(word => {
+                const btn = document.createElement('button');
+                btn.textContent = word;
+                btn.className = "scan-item bg-slate-800 hover:bg-cyan-700 border border-slate-600 py-1.5 px-2 rounded-lg text-xs font-medium text-cyan-200 truncate transition";
+                btn.onclick = () => applySuggestion(word);
+                suggestionBar.appendChild(btn);
+            });
+            refreshScannables();
+        }
+
+        function applySuggestion(word) {
+            if (currentSentence.length > 0 && !currentSentence.endsWith(" ")) {
+                const parts = currentSentence.split(" ");
+                parts[parts.length - 1] = word;
+                currentSentence = parts.join(" ") + " ";
+            } else {
+                currentSentence += word + " ";
+            }
+            renderSentence();
+        }
+
+        function selectGroup(idx) {
+            currentGroupIndex = idx;
+            document.querySelectorAll('.group-tab').forEach((tab, i) => {
+                tab.className = i === idx ? "group-tab bg-cyan-600 py-1 rounded font-bold text-white" : "group-tab bg-slate-700 py-1 rounded text-slate-300";
+            });
+            renderKeys();
+        }
+
+        function renderKeys() {
+            keysGrid.innerHTML = "";
+            charGroups[currentGroupIndex].forEach(key => {
+                const btn = document.createElement('button');
+                btn.textContent = key;
+                
+                let baseStyle = "scan-item py-2 rounded-lg font-bold text-sm border transition ";
+                if (key === 'বলুন') baseStyle += "bg-emerald-700/80 border-emerald-500 text-white text-xs";
+                else if (key === 'মুছুন' || key === 'সব মুছুন') baseStyle += "bg-red-900/60 border-red-500/50 text-red-200 text-xs";
+                else if (key === 'স্পেস' || key === 'পরের গ্রুপ') baseStyle += "bg-slate-700 border-slate-500 text-amber-300 text-xs";
+                else baseStyle += "bg-slate-800 border-slate-600 text-white hover:bg-slate-700";
+
+                btn.className = baseStyle;
+                btn.onclick = () => handleKeyPress(key);
+                keysGrid.appendChild(btn);
+            });
+            refreshScannables();
+        }
+
+        function handleKeyPress(key) {
+            if (key === 'স্পেস') {
+                currentSentence += " ";
+            } else if (key === 'মুছুন') {
+                backspaceText();
+                return;
+            } else if (key === 'সব মুছুন') {
+                clearText();
+                return;
+            } else if (key === 'বলুন') {
+                speakCurrentSentence();
+                return;
+            } else if (key === 'পরের গ্রুপ') {
+                selectGroup((currentGroupIndex + 1) % charGroups.length);
+                return;
+            } else {
+                currentSentence += key;
+            }
+            renderSentence();
+        }
+
+        function renderSentence() {
+            sentenceBox.textContent = currentSentence;
+            updateSuggestions();
+        }
+
+        function backspaceText() {
+            currentSentence = currentSentence.slice(0, -1);
+            renderSentence();
+        }
+
+        function clearText() {
+            currentSentence = "";
+            renderSentence();
+        }
+
+        function speakCurrentSentence() {
+            const textToSpeak = currentSentence.trim();
+            if (!textToSpeak) return;
+
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const utterance = new SpeechSynthesisUtterance(textToSpeak);
+                utterance.lang = 'bn-BD';
+                utterance.rate = 0.9;
+                window.speechSynthesis.speak(utterance);
+            }
+        }
+
+        function refreshScannables() {
+            scannableItems = Array.from(document.querySelectorAll('.scan-item'));
+            scanPointer = 0;
+        }
+
+        function toggleAutoScan() {
+            isAutoScanning = !isAutoScanning;
+            scanToggleBtn.textContent = isAutoScanning ? "স্ক্যান: চালু" : "স্ক্যান: বন্ধ";
+            scanToggleBtn.className = isAutoScanning ? "bg-cyan-600 px-2.5 py-0.5 rounded text-[11px] font-bold" : "bg-slate-600 px-2.5 py-0.5 rounded text-[11px] font-bold";
+            if (!isAutoScanning) {
+                scannableItems.forEach(el => el.classList.remove('ring-2', 'ring-amber-400', 'scale-105'));
+            }
+        }
+
+        setInterval(() => {
+            if (!isAutoScanning || scannableItems.length === 0) return;
+            scannableItems.forEach(el => el.classList.remove('ring-2', 'ring-amber-400', 'scale-105', 'bg-amber-500/20'));
+            
+            const currentEl = scannableItems[scanPointer];
+            if (currentEl) {
+                currentEl.classList.add('ring-2', 'ring-amber-400', 'scale-105', 'bg-amber-500/20');
+            }
+            scanPointer = (scanPointer + 1) % scannableItems.length;
+        }, 1400);
+
+        renderKeys();
+        updateSuggestions();
+
+        function dist(p1, p2) {
+            return Math.hypot(p1.x - p2.x, p1.y - p2.y);
+        }
+
+        let isMouthOpen = false;
+        let lastTriggerTime = 0;
+
+        function drawLipDots(landmarks) {
+            canvasElement.width = videoElement.videoWidth;
+            canvasElement.height = videoElement.videoHeight;
+            canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height);
+
+            const lipIndices = [61, 146, 91, 181, 84, 17, 314, 405, 321, 375, 291, 13, 14];
+            canvasCtx.fillStyle = isMouthOpen ? "#fbbf24" : "#22d3ee";
+            lipIndices.forEach(idx => {
+                const pt = landmarks[idx];
+                canvasCtx.beginPath();
+                canvasCtx.arc(pt.x * canvasElement.width, pt.y * canvasElement.height, 2.2, 0, 2 * Math.PI);
+                canvasCtx.fill();
+            });
+        }
+
+        function onResults(results) {
+            statusElement.innerHTML = `<span class="w-2 h-2 rounded-full bg-green-400"></span> লিপ সেন্সর সক্রিয়`;
+
+            if (results.multiFaceLandmarks && results.multiFaceLandmarks.length > 0) {
+                const landmarks = results.multiFaceLandmarks[0];
+                drawLipDots(landmarks);
+
+                const mouthHeight = dist(landmarks[13], landmarks[14]);
+                const mouthWidth = dist(landmarks[61], landmarks[291]);
+                const openness = mouthHeight / (mouthWidth + 0.0001);
+
+                const now = Date.now();
+
+                if (openness > 0.16) {
+                    if (!isMouthOpen) {
+                        isMouthOpen = true;
+                        lipStateElement.textContent = "ঠোঁট: সিলেক্ট! 🗣️";
+                        lipStateElement.classList.replace('text-cyan-300', 'text-amber-400');
+
+                        if (isAutoScanning && (now - lastTriggerTime > 900)) {
+                            lastTriggerTime = now;
+                            const activeIdx = (scanPointer - 1 + scannableItems.length) % scannableItems.length;
+                            if (scannableItems[activeIdx]) {
+                                scannableItems[activeIdx].click();
+                            }
+                        }
+                    }
+                } else {
+                    if (isMouthOpen) {
+                        isMouthOpen = false;
+                        lipStateElement.textContent = "ঠোঁট: স্থির 👄";
+                        lipStateElement.classList.replace('text-amber-400', 'text-cyan-300');
+                    }
+                }
+            }
+        }
+
+        const faceMesh = new FaceMesh({
+            locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/${file}`
+        });
+
+        faceMesh.setOptions({
+            maxNumFaces: 1,
+            refineLandmarks: true,
+            minDetectionConfidence: 0.6,
+            minTrackingConfidence: 0.6
+        });
+
+        faceMesh.onResults(onResults);
+
+        const camera = new Camera(videoElement, {
+            onFrame: async () => {
+                await faceMesh.send({ image: videoElement });
+            },
+            width: 640,
+            height: 480
+        });
+
+        camera.start().catch(err => {
+            statusElement.innerHTML = `<span class="w-2 h-2 rounded-full bg-red-400"></span> ক্যামেরা ব্লক করা আছে`;
+        });
+    </script>
+
+</body></html>
